@@ -1,0 +1,13 @@
+Convert Unix Timestamp in Php 
+{
+    $timestamp=1318781876406;
+    echo date('Y-m-d H:i:s', $timestamp/1000);
+}
+
+<?php
+date_default_timezone_set("Asia/Calcutta"); 
+$timestamp="2023-03-11T18:30:00.000Z";
+echo date('Y-m-d h:i:s', strtotime($timestamp));
+
+OUTPUT: '2023-03-12 12:00:00'
+?> 
